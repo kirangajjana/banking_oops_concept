@@ -39,7 +39,7 @@ while True:
 
     elif output.lower()=="l":
             print(f"hello mr {c.name} user welcome to the {banking.bank} of branch {banking.branch}")
-            amount=input("enter the amount you want to take loan from the bank")
+            amount=int(input("enter the amount you want to take loan from the bank"))
             print(f"the amount you have taken the loan from banlk is {amount}")
             c.balance=c.balance+amount
             print(f"the updated amount in your acount is {c.balance}")
