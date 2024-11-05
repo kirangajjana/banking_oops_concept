@@ -30,7 +30,7 @@ while True:
     elif output.lower()=="w":  #checking the condition wether the person opted for withdraw
             print(f"hello  mr {c.name} user welcome to the {banking.bank} of branch {banking.branch}")
             amount=int(input("enter the amount you want to withdraw from  your account"))
-            if amount>c.balance:
+            if amount<c.balance:
                 d=c.withdraw(amount)
                 print(f"the total amount you have withdrawn {d}")
             else:
@@ -40,7 +40,9 @@ while True:
     elif output.lower()=="l":
             print(f"hello mr {c.name} user welcome to the {banking.bank} of branch {banking.branch}")
             amount=input("enter the amount you want to take loan from the bank")
-            sys.exit()
+            print(f"the amount you have taken the loan from banlk is {amount}")
+            c.balance=c.balance+amount
+            print(f"the updated amount in your acount is {c.balance}")
 
 
             
