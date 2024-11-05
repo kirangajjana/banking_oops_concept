@@ -20,4 +20,12 @@ output=input("please enter the option you want to proceed")
 while True:
     if output.lower()=="d":
         print(f"hello user welcome to the {banking.bank} of branch {banking.branch}")
-        print("enter the amount you want to deposit into your account")
+        amount=input("nter the amount you want to deposit into your account")
+        if amount>=1:
+            d=c.deposit(amount)
+            print(f"the updated balance in your account is {d}")
+    elif output.lower()=="w": 
+        print(f"hello user welcome to the {banking.bank} of branch {banking.branch}")
+        amount=input("enter the amount you want to withdraw from  your account")
+
+
