@@ -15,5 +15,9 @@ class banking:
         self.balance=self.balance+Loan #user can opt for loan upto 5lakhs more than that need further approval
 user_name=input("please enter your name")   
 c=banking(user_name)
-print("D-Deposit\nW-Withdrawl\nL-loan\nE-exit")
-output=input("please enter the option you want to proceed")
+print("D-Deposit\nW-Withdrawl\nL-loan\nE-exit") #user need to select from the below options to move further
+output=input("please enter the option you want to proceed") 
+while True:
+    if output.lower()=="d":
+        print(f"hello user welcome to the {banking.bank} of branch {banking.branch}")
+        print("enter the amount you want to deposit into your account")
