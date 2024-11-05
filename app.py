@@ -1,3 +1,4 @@
+import sys
 class banking:
     ''' we are making an banking stimulation using opps concepts'''
     bank="Kiran Gajjana Bank"  #static variable
@@ -24,6 +25,9 @@ while True:
         if amount>=1:
             d=c.deposit(amount)
             print(f"the updated balance in your account is {d}")
+            sys.exit()
+        else:
+            print("please enter the valid input")    
     elif output.lower()=="w":  #checking the condition wether the person opted for withdraw
         print(f"hello  mr {c.name} user welcome to the {banking.bank} of branch {banking.branch}")
         amount=input("enter the amount you want to withdraw from  your account")
@@ -32,10 +36,13 @@ while True:
             print(f"the total amount you have withdrawn {d}")
         else:
             print("sorry you dont have the balance to go with the above transaction")
+            sys.exit()
 
     elif output.lower()=="l":
          print(f"hello mr {c.name} user welcome to the {banking.bank} of branch {banking.branch}")
          amount=input("enter the amount you want to take loan from the bank")
+         sys.exit()
+
 
          
 
