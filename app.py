@@ -37,13 +37,13 @@ while True:
                 print("sorry you dont have the balance to go with the above transaction")
                 sys.exit()
 
-    elif output.lower()=="l":
+    elif output.lower()=="l": #user will get the capability to take an loan from bank
             print(f"hello mr {c.name} user welcome to the {banking.bank} of branch {banking.branch}")
             amount=int(input("enter the amount you want to take loan from the bank"))
             print(f"the amount you have taken the loan from banlk is {amount}")
             c.balance=c.balance+amount
             print(f"the updated amount in your acount is {c.balance}")
-    elif output.lower()=="e":
+    elif output.lower()=="e": #user will move out of the transaction
          print(f"thank you {c.name} for choosing {c.bank}")   
          sys.exit()     
 
