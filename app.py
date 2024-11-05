@@ -43,6 +43,9 @@ while True:
             print(f"the amount you have taken the loan from banlk is {amount}")
             c.balance=c.balance+amount
             print(f"the updated amount in your acount is {c.balance}")
+    elif output.lower()=="e":
+         print(f"thank you {c.name} for choosing {c.bank}")   
+         sys.exit()     
 
 
             
