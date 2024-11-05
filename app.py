@@ -27,5 +27,9 @@ while True:
     elif output.lower()=="w":  #checking the condition wether the person opted for withdraw
         print(f"hello user welcome to the {banking.bank} of branch {banking.branch}")
         amount=input("enter the amount you want to withdraw from  your account")
+    elif output.lower()=="l":
+         print(f"hello user welcome to the {banking.bank} of branch {banking.branch}")
+         amount=input("enter the amount you want to take loan from the bank")
+         
 
 
