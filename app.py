@@ -18,13 +18,13 @@ c=banking(user_name)
 print("D-Deposit\nW-Withdrawl\nL-loan\nE-exit") #user need to select from the below options to move further
 output=input("please enter the option you want to proceed") 
 while True:
-    if output.lower()=="d":
+    if output.lower()=="d": #checking the condition wether the person opted for deposite
         print(f"hello user welcome to the {banking.bank} of branch {banking.branch}")
         amount=input("nter the amount you want to deposit into your account")
         if amount>=1:
             d=c.deposit(amount)
             print(f"the updated balance in your account is {d}")
-    elif output.lower()=="w": 
+    elif output.lower()=="w":  #checking the condition wether the person opted for withdraw
         print(f"hello user welcome to the {banking.bank} of branch {banking.branch}")
         amount=input("enter the amount you want to withdraw from  your account")
 
